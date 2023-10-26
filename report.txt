@@ -1,0 +1,36 @@
+Please list all sources (people, books, webpages, etc.) you consulted regarding this assignment and how they helped: (Sources can be used broadly as reference for the general approach; YOU MUST NOT COPY CODE!)
+
+CSCE 221 Students: Tommy Garriga, Vansh Amin, Nathaniel Fernandes, Alex Pantazopol
+
+Other People: 
+
+Printed Material: 
+
+Websites: cplusplus.com, stackoverflow.com
+
+Other: 
+
+
+2. Regarding inheritance, what are pure virtual functions?
+
+Pure virtual functions are functions that you know that every subclass of your current class will need implimented in their own way and so you declare it 
+but do not define it until the subclass.
+
+
+3. What are you observations on the runtime of the different hash table methods?
+
+For me my chaining was almost twice as fast as my probing which is interesting because I would thing generally probing would be faster in the long run because
+you are staying relatively close in memory as opposed to chaining which allocates memory all over the place.
+
+
+4. We did an extremely simplified blockchain and cryptocurrency, using the requirement that the hash only needs to begin with '2'.  What mining approach did you create to try to find a valid nonce?
+
+I had a char that was set as an ASCII value and each time through my while loop with condition that the first of the hash wasnt 2, I would just incriment that char
+by using char++ which would hop it into the next ASCII value until it found one that worked.
+
+
+5. How might you approach this problem differently with a more restrictive problem?  For instance, if you change the validator to require the hash begin with "221", you will find the mining operation takes significantly more time.  Briefly discuss this in the context of modern cryptocurrency mining.
+
+If it was a harder hash to find such as 221 which would take much longer, I would probably have to do something other than using ASCII values. Perhaps I could just generate completely random
+numbers to throw on the end until I got it. This is important in modern crypto because the amount of time it takes for one unit of the cryptocurrency can be changed depending on how long the
+validator is.
